@@ -1,0 +1,28 @@
+<android.support.v4.widget.SlidingPaneLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sp" >
+    
+    
+
+    <!-- Left side pane. (Master) -->
+    <fragment android:id="@+id/leftpane"
+              android:name="com.questdot.slidingpaneexample.ListBookmarkFragment"
+              android:layout_width="190dp"
+      		  android:layout_height="match_parent"
+              android:layout_gravity="left"
+        tools:layout="@layout/leftside_layout" />
+    
+    
+    <!-- Right side page. (Slave)  -->
+    <fragment android:id="@+id/rightpane"
+              android:name="com.questdot.slidingpaneexample.ViewBookmarkFragment"
+              android:layout_width="350dp"
+      		  android:layout_height="match_parent"
+              android:layout_gravity="right"
+              android:layout_weight="1"
+        tools:layout="@layout/bookmarkview_layout" />
+    
+</android.support.v4.widget.SlidingPaneLayout>
