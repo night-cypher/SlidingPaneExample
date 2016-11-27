@@ -26,16 +26,12 @@ public class ContentFragment extends Fragment {
 	}
 
 
-
-
 	public void setBookmark(String link) {
 		if (link != null) {
 			System.out.println("loading url");
 			webView.loadUrl(link);
 		}
 	}
-
-
 
 
 }
