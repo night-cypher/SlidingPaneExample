@@ -53,9 +53,8 @@ public class MainActivity extends AppCompatActivity implements BookmarkListener{
 
 	@Override
 	public void onChangeBookmark(String bookmark) {
-		// We get notified when user clicks on a bookmark in the ListBookmarkFragment
-		System.out.println("Bookmark ["+bookmark+"]");
-		ViewBookmarkFragment f = (ViewBookmarkFragment) getFragmentManager().findFragmentById(R.id.rightpane);
+
+		ContentFragment f = (ContentFragment) getFragmentManager().findFragmentById(R.id.rightpane);
 		f.setBookmark(bookmark);
 		
 	}

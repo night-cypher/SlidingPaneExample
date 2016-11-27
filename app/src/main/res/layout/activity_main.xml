@@ -9,7 +9,7 @@
 
     <!-- Left side pane. (Master) -->
     <fragment android:id="@+id/leftpane"
-              android:name="com.questdot.slidingpaneexample.ListBookmarkFragment"
+              android:name="com.questdot.slidingpaneexample.SlidingPaneFragment"
               android:layout_width="190dp"
       		  android:layout_height="match_parent"
               android:layout_gravity="left"
@@ -18,7 +18,7 @@
     
     <!-- Right side page. (Slave)  -->
     <fragment android:id="@+id/rightpane"
-              android:name="com.questdot.slidingpaneexample.ViewBookmarkFragment"
+              android:name="com.questdot.slidingpaneexample.ContentFragment"
               android:layout_width="350dp"
       		  android:layout_height="match_parent"
               android:layout_gravity="right"
