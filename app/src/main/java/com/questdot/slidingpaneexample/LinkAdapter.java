@@ -16,7 +16,7 @@ public class LinkAdapter extends ArrayAdapter<Bookmark> {
 	private Context ctx;
 	
 	public LinkAdapter(List<Bookmark> bookList, Context ctx) {
-		super(ctx, R.layout.bookmark_layout, bookList);
+		super(ctx, R.layout.link_list_item, bookList);
 		this.ctx = ctx;
 		this.bookList = bookList;
 	}
@@ -42,7 +42,7 @@ public class LinkAdapter extends ArrayAdapter<Bookmark> {
 		
 		if ( v == null) {
 			LayoutInflater inf = (LayoutInflater) ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			v = (View) inf.inflate(R.layout.bookmark_layout, null);
+			v = (View) inf.inflate(R.layout.link_list_item, null);
 			TextView tName = (TextView) v.findViewById(R.id.bkmName);
 			TextView tlink = (TextView) v.findViewById(R.id.bkmLink);
 			

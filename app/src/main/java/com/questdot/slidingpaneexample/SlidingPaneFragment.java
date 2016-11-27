@@ -1,6 +1,5 @@
 package com.questdot.slidingpaneexample;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -31,7 +30,7 @@ public class SlidingPaneFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 							 Bundle savedInstanceState) {
 		
-		View v = inflater.inflate(R.layout.leftside_layout, container, true);
+		View v = inflater.inflate(R.layout.sliding_pane_layout, container, true);
 		ListView lView = (ListView) v.findViewById(R.id.bookList);
 		LinkAdapter la = new LinkAdapter(bookmarkList, getActivity());
 		lView.setAdapter(la);

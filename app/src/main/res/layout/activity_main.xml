@@ -13,7 +13,7 @@
               android:layout_width="190dp"
       		  android:layout_height="match_parent"
               android:layout_gravity="left"
-        tools:layout="@layout/leftside_layout" />
+        tools:layout="@layout/sliding_pane_layout" />
     
     
     <!-- Right side page. (Slave)  -->
@@ -23,6 +23,6 @@
       		  android:layout_height="match_parent"
               android:layout_gravity="right"
               android:layout_weight="1"
-        tools:layout="@layout/bookmarkview_layout" />
+        tools:layout="@layout/content_fragment_layout" />
     
 </android.support.v4.widget.SlidingPaneLayout>
